@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Inter",sans-serif;
+}
+
+/* Dashboard Layout */
+
+.dashboard{
+display:flex;
+min-height:100vh;
+position:relative;
+
+background:
+radial-gradient(circle at 10% 20%,#eef2ff 0%,transparent 40%),
+radial-gradient(circle at 90% 80%,#e0f2fe 0%,transparent 40%),
+linear-gradient(180deg,#f8fafc,#eef2ff);
+
+background-attachment:fixed;
+}
+
+.dashboard::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+
+background-image:radial-gradient(#d1d5db 1px,transparent 1px);
+background-size:40px 40px;
+
+opacity:0.15;
+pointer-events:none;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:250px;
+min-width:250px;
+
+background:#0f172a;
+color:white;
+
+padding:30px 20px;
+
+display:flex;
+flex-direction:column;
+
+transition:all .35s ease;
+
+position:relative;
+z-index:100;
+}
+
+.sidebar-collapsed .sidebar{
+transform:translateX(-100%);
+position:absolute;
+}
+
+/* Main Content */
+
+.main-content{
+flex:1;
+padding:70px 40px 40px 40px;
+transition:all .35s ease;
+}
+
+.sidebar-collapsed .main-content{
+margin-left:0;
+width:100%;
+}
+
+/* Toggle Button */
+
+.toggle-btn{
+position:fixed;
+top:25px;
+left:260px;
+
+background:#6366f1;
+border:none;
+color:white;
+
+padding:10px 14px;
+border-radius:8px;
+
+cursor:pointer;
+font-size:16px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+transition:all .3s ease;
+
+z-index:1000;
+}
+
+.sidebar-collapsed .toggle-btn{
+left:20px;
+}
+
+.toggle-btn:hover{
+background:#4f46e5;
+transform:scale(1.05);
+}
+
+/* Title */
+
+.tracker-title{
+font-size:30px;
+margin-bottom:30px;
+
+font-weight:600;
+color:#111827;
+}
+
+/* Search + Filter */
+
+.search-filter{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.search-filter input,
+.search-filter select{
+
+padding:12px 18px;
+
+border-radius:10px;
+border:1px solid #d1d5db;
+
+font-size:14px;
+background:white;
+
+transition:.2s;
+
+flex:1;
+min-width:150px;
+}
+
+.search-filter input:focus,
+.search-filter select:focus{
+
+outline:none;
+border-color:#6366f1;
+
+box-shadow:0 0 0 2px rgba(99,102,241,.15);
+}
+
+/* Add Problem */
+
+.add-problem-card{
+
+display:flex;
+gap:12px;
+align-items:center;
+
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.add-problem-card input,
+.add-problem-card select{
+
+padding:12px 16px;
+
+border-radius:10px;
+border:1px solid #d1d5db;
+
+font-size:14px;
+background:white;
+
+transition:.2s;
+
+flex:1;
+min-width:150px;
+}
+
+.add-problem-card button{
+
+background:#6366f1;
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:14px;
+font-weight:500;
+
+transition:.25s;
+}
+
+.add-problem-card button:hover{
+background:#4f46e5;
+transform:translateY(-1px);
+}
+
+/* Problem List */
+
+.problem-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+/* Problem Card */
+
+.problem-card{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(10px);
+
+padding:24px 30px;
+
+border-radius:14px;
+
+border:1px solid rgba(255,255,255,.4);
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+transition:.25s;
+}
+
+.problem-card:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+/* Problem Info */
+
+.problem-info{
+display:flex;
+align-items:flex-start;
+}
+
+/* Title + Topic Layout */
+
+.problem-text{
+display:flex;
+flex-direction:column;
+gap:4px;
+}
+
+.title-row{
+
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.problem-text h3{
+font-size:16px;
+font-weight:500;
+color:#111827;
+}
+
+/* Topic */
+
+.topic-tag{
+
+font-size:13px;
+color:#6b7280;
+}
+
+/* Difficulty Badge */
+
+.difficulty{
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:12px;
+font-weight:500;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+white-space:nowrap;
+}
+
+/* Difficulty Colors */
+
+.easy{
+background:#dcfce7;
+color:#15803d;
+}
+
+.medium{
+background:#fef3c7;
+color:#b45309;
+}
+
+.hard{
+background:#fee2e2;
+color:#b91c1c;
+}
+
+/* Actions */
+
+.problem-actions{
+display:flex;
+align-items:center;
+gap:12px;
+flex-wrap:wrap;
+}
+
+/* Buttons */
+
+.solve-btn{
+
+background:#2563eb;
+color:white;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-size:13px;
+}
+
+.mark-btn{
+
+background:#e5e7eb;
+
+border:none;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+cursor:pointer;
+}
+
+.solved-btn{
+
+background:#22c55e;
+color:white;
+
+border:none;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+cursor:pointer;
+}
+
+.delete-btn{
+
+background:#ef4444;
+color:white;
+
+border:none;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+cursor:pointer;
+}
+
+.delete-btn:hover{
+background:#dc2626;
+}
+
+/* Progress Section */
+
+.progress-section{
+
+margin-bottom:30px;
+
+background:rgba(255,255,255,.8);
+
+padding:20px 25px;
+
+border-radius:14px;
+
+border:1px solid rgba(255,255,255,.4);
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.progress-bar{
+
+width:100%;
+height:10px;
+
+background:#e5e7eb;
+
+border-radius:10px;
+
+overflow:hidden;
+}
+
+.progress-fill{
+
+height:100%;
+
+background:#6366f1;
+
+border-radius:10px;
+
+transition:width .4s ease;
+}
+
+/* Empty */
+
+.empty-msg{
+
+text-align:center;
+
+padding:40px;
+
+color:#6b7280;
+
+font-size:15px;
+}
+
+/* Responsive */
+
+@media (max-width:900px){
+
+.sidebar{
+position:fixed;
+height:100vh;
+left:0;
+top:0;
+}
+
+.sidebar-collapsed .sidebar{
+transform:translateX(-100%);
+}
+
+.main-content{
+padding:70px 20px 20px 20px;
+}
+
+.toggle-btn{
+left:20px;
+}
+
+.problem-card{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.problem-actions{
+width:100%;
+}
+
+}

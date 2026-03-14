@@ -1,0 +1,248 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* Background */
+
+.auth-container{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+radial-gradient(circle at 20% 20%,#7c3aed,transparent 40%),
+radial-gradient(circle at 80% 80%,#ec4899,transparent 40%),
+#0f172a;
+
+}
+
+
+/* Login Card */
+
+.auth-card{
+
+width:380px;
+
+padding:40px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.06);
+
+border:1px solid rgba(255,255,255,0.1);
+
+backdrop-filter:blur(25px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.6),
+inset 0 0 10px rgba(255,255,255,0.05);
+
+transition:0.3s;
+
+}
+
+.auth-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 30px 60px rgba(0,0,0,0.7);
+
+}
+
+/* Title */
+
+.auth-card h2{
+
+color:white;
+
+text-align:center;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+.subtitle{
+
+color:#cbd5f5;
+
+text-align:center;
+
+margin-bottom:25px;
+
+font-size:14px;
+
+}
+
+/* Input Section */
+
+.input-group{
+
+margin-bottom:18px;
+
+}
+
+.input-group label{
+
+font-size:13px;
+
+color:#e2e8f0;
+
+}
+
+/* Input Fields */
+
+.input-group input{
+
+width:100%;
+
+padding:12px 14px;
+
+margin-top:6px;
+
+border-radius:10px;
+
+border:none;
+
+outline:none;
+
+background:#020617;
+
+color:white;
+
+font-size:14px;
+
+border:1px solid #1e293b;
+
+transition:0.25s;
+
+}
+
+.input-group input:focus{
+
+border:1px solid #8b5cf6;
+
+box-shadow:0 0 10px rgba(139,92,246,0.6);
+
+}
+
+/* Button */
+
+.auth-btn{
+
+width:100%;
+
+padding:12px;
+
+border-radius:30px;
+
+border:none;
+
+cursor:pointer;
+
+margin-top:10px;
+
+font-size:15px;
+
+font-weight:500;
+
+color:white;
+
+background:linear-gradient(90deg,#ec4899,#7c3aed);
+
+transition:0.3s;
+
+}
+
+.auth-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px rgba(236,72,153,0.7);
+
+}
+
+
+/* Error */
+
+.error{
+
+background:rgba(255,0,0,0.2);
+
+color:#ffb4b4;
+
+padding:8px;
+
+border-radius:8px;
+
+font-size:13px;
+
+margin-bottom:12px;
+
+text-align:center;
+
+}
+
+/* Success */
+
+.success{
+
+background:rgba(34,197,94,0.2);
+
+color:#bbf7d0;
+
+padding:8px;
+
+border-radius:8px;
+
+font-size:13px;
+
+margin-bottom:12px;
+
+text-align:center;
+
+}
+
+
+/* Bottom Switch */
+
+.switch-text{
+
+margin-top:18px;
+
+font-size:14px;
+
+color:#cbd5f5;
+
+text-align:center;
+
+}
+
+.switch-text a{
+
+color:#ec4899;
+
+font-weight:500;
+
+text-decoration:none;
+
+}
+
+.switch-text a:hover{
+
+text-decoration:underline;
+
+}

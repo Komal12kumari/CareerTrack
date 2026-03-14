@@ -1,0 +1,215 @@
+.application-form{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  
+  background:white;
+  padding:20px;
+  
+  border-radius:12px;
+  
+  margin-bottom:30px;
+  
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .application-form input,
+  .application-form select{
+  
+  padding:10px;
+  
+  border-radius:6px;
+  border:1px solid #ddd;
+  
+  flex:1;
+  min-width:150px;
+  
+  }
+  
+  .application-form button{
+  
+  background:#6366f1;
+  color:white;
+  
+  border:none;
+  
+  padding:10px 16px;
+  
+  border-radius:6px;
+  
+  cursor:pointer;
+  
+  }
+  
+  .application-form button:hover{
+  
+  background:#4f46e5;
+  
+  }
+  
+  .applications-list{
+  
+  display:flex;
+  flex-direction:column;
+  
+  gap:15px;
+  
+  }
+  
+  .application-card{
+  
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+  background:white;
+  
+  padding:20px;
+  
+  border-radius:12px;
+  
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  
+  transition:.2s;
+  
+  }
+  
+  .application-card:hover{
+  
+  transform:translateY(-3px);
+  
+  }
+  
+  .status{
+  
+  padding:4px 10px;
+  
+  border-radius:20px;
+  
+  font-size:12px;
+  
+  margin-top:5px;
+  
+  display:inline-block;
+  
+  }
+  
+  .status.applied{
+  
+  background:#e0e7ff;
+  color:#4338ca;
+  
+  }
+  
+  .status.interview{
+  
+  background:#fef3c7;
+  color:#92400e;
+  
+  }
+  
+  .status.offer{
+  
+  background:#dcfce7;
+  color:#166534;
+  
+  }
+  
+  .status.rejected{
+  
+  background:#fee2e2;
+  color:#991b1b;
+  
+  }
+  
+  .delete-btn{
+  
+  background:#ef4444;
+  
+  color:white;
+  
+  border:none;
+  
+  padding:8px 12px;
+  
+  border-radius:6px;
+  
+  cursor:pointer;
+  
+  }
+  
+  .delete-btn:hover{
+  
+  background:#dc2626;
+  
+  }
+
+  .application-info{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    }
+    
+    .role{
+    font-size:14px;
+    color:#555;
+    }
+    
+    .date{
+    font-size:12px;
+    color:#888;
+    }
+    
+    .notes{
+    font-size:13px;
+    color:#444;
+    }
+    
+    /* ================= JOB LINK BUTTON ================= */
+
+/* ================= LINK COLUMN ================= */
+
+.link-column{
+  width:140px;
+  display:flex;
+  justify-content:center;
+  }
+  
+  
+  /* ================= VIEW JOB BUTTON ================= */
+  
+  .job-link{
+  
+  background:#6366f1;   /* nice dashboard purple */
+  
+  color:white;
+  
+  padding:8px 14px;
+  
+  border-radius:6px;
+  
+  font-size:13px;
+  
+  font-weight:500;
+  
+  text-decoration:none;
+  
+  display:inline-flex;
+  
+  align-items:center;
+  
+  justify-content:center;
+  
+  transition:0.2s;
+  
+  box-shadow:0 3px 6px rgba(0,0,0,0.08);
+  
+  }
+  
+  .job-link:hover{
+  
+  background:#4f46e5;
+  
+  transform:translateY(-1px);
+  
+  }

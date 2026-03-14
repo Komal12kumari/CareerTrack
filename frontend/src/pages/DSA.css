@@ -1,0 +1,53 @@
+.dsa-container {
+    padding: 40px;
+    background: #f3f4f6;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .dsa-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .dsa-form input,
+  .dsa-form select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .dsa-form button {
+    padding: 8px 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .problem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .problem-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .problem-card button {
+    margin-top: 8px;
+    background: #ef4444;
+    border: none;
+    padding: 5px 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
