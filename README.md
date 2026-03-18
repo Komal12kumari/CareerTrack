@@ -27,6 +27,22 @@ CareerTrack/
 └── README.md
 
 
+## screenshots
+
+### Login Upload
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### DSA_TRACKER Upload
+![DSA_TRACKER](screenshots/dsa_Tracker.png)
+
+### Resume Upload
+![Resume](screenshots/resume.png)
+
+
+
 ## Getting Started
 
 ### 1. Clone the repository
